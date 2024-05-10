@@ -1,4 +1,4 @@
-CREATE DATABASE savethec_finanzas CHARACTER SET utf8mb4  COLLATE utf8mb4_spanish_ci;
+CREATE DATABASE bd_estudios CHARACTER SET utf8mb4  COLLATE utf8mb4_spanish_ci;
 
 SHOW CHARACTER SET LIKE 'utf%';
 SHOW COLLATION WHERE Charset = 'utf8mb4';
@@ -31,7 +31,7 @@ DROP TABLE if exists finanzas_stage_gasto;
 DROP TABLE if exists finanzas_dea;
 DROP TABLE if exists finanzas_costc;
 DROP TABLE if exists finanzas_sof;
-DROP TABLE if exists finanzas_stage_ppto_sof
+DROP TABLE if exists finanzas_stage_ppto_sof;
 /*********************************
 -- CREACION DE TABLAS 
 *********************************/
