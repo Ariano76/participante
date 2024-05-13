@@ -54,6 +54,38 @@ BEGIN
 END |
 DELIMITER ;
 
+DROP PROCEDURE IF EXISTS `SP_Login_validar`;
+DELIMITER |
+CREATE PROCEDURE `SP_Login_validar`(in usuario varchar(50), in pass varchar(100), OUT success INT)
+BEGIN
+	DECLARE exit handler for sqlexception
+	BEGIN     -- ERROR
+		SET success = 0;
+	ROLLBACK;
+	END;
+ 
+	START TRANSACTION;
+    SET @clave = password(pass);
+    SELECT id_usuario into success FROM usuarios where nombre_usuario = usuario and contrasenia = @clave;
+    COMMIT;
+END |
+DELIMITER ;
+
+DROP PROCEDURE IF EXISTS `SP_user_rol`;
+DELIMITER |
+CREATE PROCEDURE `SP_user_rol`(in codusuario int, OUT success INT)
+BEGIN
+	DECLARE exit handler for sqlexception
+	BEGIN     -- ERROR
+		SET success = 0;
+	ROLLBACK;
+	END;
+ 
+	START TRANSACTION;    
+    SELECT id_rol into success FROM usuarios where id_usuario = codusuario;
+    COMMIT;
+END |
+DELIMITER ;
 
 
 

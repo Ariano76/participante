@@ -4,7 +4,7 @@ class TransactionSCI
 {
 
 private $DB_HOST = 'localhost'; //localhost server 
-private $DB_NAME = 'bd_bha_sci'; //database name
+private $DB_NAME = 'bd_estudios'; //database name
 private $DB_USER = 'root'; //database username
 private $DB_PASSWORD = ''; //database password 
 

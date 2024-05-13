@@ -21,8 +21,6 @@ if (!isset($_SESSION['usuario'])) {
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Administración SCF</title>
 
-	
-	
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
 
 	<!-- Bootstrap CSS -->
@@ -141,7 +139,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
 <body>
 
-	<?php $url="http://".$_SERVER['HTTP_HOST']."/scf" ?>
+	<?php $url="http://".$_SERVER['HTTP_HOST']."/participante" ?>
 	<?php 
 	if ($_SESSION['rolusuario']==4) { // COORDINADOR FINANZAS
 		?>
@@ -212,12 +210,12 @@ document.addEventListener("DOMContentLoaded", function(){
 			</div>
 		</nav>
 		<?php	
-	} elseif($_SESSION['rolusuario']==3) { // GERENCIA FINANZAS
+	} elseif($_SESSION['rolusuario']==1) { // GERENCIA FINANZAS
 		?>
 		<nav class="navbar navbar-expand-md navbar-light bg-white border border-dark">
 			<div class="container-fluid">		
 				<a class="navbar-brand" href="<?php echo $url."/administrador/inicio.php" ?>">
-					<img src="https://www.savethechildren.org.pe/wp-content/themes/save-the-children/images/logo-save-the-children.svg" alt="" width="" height="">
+					<img src="../LOGO-PUNCHE-NEGRO-SIN-FONDO_icono.png" alt="" width="" height="">
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 					</a>
 					<span class="navbar-toggler-icon"></span>

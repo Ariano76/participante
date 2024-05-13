@@ -2,11 +2,13 @@
 
 
 <div class="jumbotron text-center">
-	<h1 class="display-4">Sistema de Finanzas</h1>
+	<h1 class="display-4">Sistema Consulta de Participantes</h1>
 	<!--p class="lead">Consulta de beneficiarios.</p-->
+	<div>
+		&nbsp;
+	</div>
+	<img width="800" src="logo_punche_01.png" alt="..." class="img-thumbnail rounded mx-auto d-block">
 	
-	<img width="800" src="https://www.savethechildren.org.pe/wp-content/uploads/2020/05/MG_8433-1280x650.jpg" alt="..." class="img-thumbnail rounded mx-auto d-block">
-	<!--a class="btn btn-primary btn-sm|btn-lg" href="<?php echo $url."/administrador/index.php"?>" role="button">Ingresar al sistema</a-->
 </div>
 <div>
 	&nbsp;

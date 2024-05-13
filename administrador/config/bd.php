@@ -35,7 +35,7 @@ class DataSource
 
 	const PASSWORD = '';
 
-	const DATABASENAME = 'bd_bha_sci';
+	const DATABASENAME = 'bd_estudios';
 
 	private $conn;
 

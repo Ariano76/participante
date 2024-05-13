@@ -37,7 +37,7 @@ if ($_POST) {
 
 	<body>
 
-		<?php $url="http://".$_SERVER['HTTP_HOST']."/scf" ?>
+		<?php $url="http://".$_SERVER['HTTP_HOST']."/participante" ?>
 		
 		<div class="container">
 			<div class="row">
